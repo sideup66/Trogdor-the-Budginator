@@ -38,12 +38,12 @@
             lblexptcst = new Label();
             label4 = new Label();
             lblactualcost = new Label();
+            lstbxmonth = new ListBox();
             ((System.ComponentModel.ISupportInitialize)itemsgrdview).BeginInit();
             SuspendLayout();
             // 
             // itemsgrdview
             // 
-            itemsgrdview.AllowUserToAddRows = false;
             itemsgrdview.AllowUserToDeleteRows = false;
             itemsgrdview.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             itemsgrdview.Columns.AddRange(new DataGridViewColumn[] { Item, Cost });
@@ -135,11 +135,21 @@
             lblactualcost.TabIndex = 7;
             lblactualcost.Text = "$$$actualcost";
             // 
+            // lstbxmonth
+            // 
+            lstbxmonth.FormattingEnabled = true;
+            lstbxmonth.ItemHeight = 25;
+            lstbxmonth.Location = new Point(753, 443);
+            lstbxmonth.Name = "lstbxmonth";
+            lstbxmonth.Size = new Size(314, 404);
+            lstbxmonth.TabIndex = 8;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1119, 933);
+            Controls.Add(lstbxmonth);
             Controls.Add(lblactualcost);
             Controls.Add(label4);
             Controls.Add(lblexptcst);
@@ -167,5 +177,6 @@
         private Label lblactualcost;
         private DataGridViewTextBoxColumn Item;
         private DataGridViewTextBoxColumn Cost;
+        private ListBox lstbxmonth;
     }
 }
